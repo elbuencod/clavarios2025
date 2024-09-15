@@ -2,17 +2,18 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
-    color: #333;
+    color: #197f3e; /* Color del texto */
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #4a90e2;
-    color: white;
+    background-color: white; /* Color de fondo del banner */
+    color: #197f3e; /* Color del texto en el banner */
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid #197f3e; /* Línea verde en la parte inferior del banner */
 }
 
 h1 {
@@ -34,7 +35,7 @@ article {
 }
 
 h2 {
-    color: #4a90e2;
+    color: #197f3e; /* Color de los subtítulos */
     font-size: 1.5em;
 }
 
@@ -46,7 +47,9 @@ p {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: white; /* Fondo blanco del footer */
+    border-top: 5px solid #197f3e; /* Línea verde en la parte superior del footer */
+    color: #197f3e; /* Color del texto en el footer */
     margin-top: 20px;
 }
 
