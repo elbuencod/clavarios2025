@@ -48,7 +48,6 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: white; /* Fondo blanco del footer */
-    border-top: 5px solid #197f3e; /* Línea verde en la parte superior del footer */
     color: #197f3e; /* Color del texto en el footer */
     margin-top: 20px;
 }
