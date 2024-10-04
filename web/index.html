@@ -3,40 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualización de PDF usando PDF.js</title>
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <title>Clavarios del Cristo 2025</title>
 </head>
 <body>
-    <h1>Visualización de PDF usando PDF.js</h1>
-    <canvas id="pdf-canvas"></canvas>
-    
-    <script>
-        var url = 'llibret.pdf'; // Asegúrate de que esta ruta sea correcta.
-
-        // Cargar el documento PDF usando PDF.js
-        var pdfjsLib = window['pdfjs-dist/build/pdf'];
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
-
-        // Obtén el documento PDF
-        pdfjsLib.getDocument(url).promise.then(function(pdf) {
-            // Accede a la primera página del documento PDF
-            pdf.getPage(1).then(function(page) {
-                var viewport = page.getViewport({ scale: 1.5 });
-                var canvas = document.getElementById('pdf-canvas');
-                var context = canvas.getContext('2d');
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-
-                // Renderiza la página
-                var renderContext = {
-                    canvasContext: context,
-                    viewport: viewport
-                };
-                page.render(renderContext);
-            });
-        }).catch(function(error) {
-            console.error('Error al cargar el PDF: ', error);
-        });
-    </script>
+    <a href="llibret.pdf" target="_blank">Haz clic aquí para ver el llibret</a>
 </body>
 </html>
