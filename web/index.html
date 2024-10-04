@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clavarios del Cristo de Aldaia 2025</title>
     <style>
-        .container {
+        body {
+            margin: 0; /* Elimina márgenes predeterminados del body */
             display: flex;
-            justify-content: center; /* Centra el contenido horizontalmente */
-            align-items: center; /* Centra el contenido verticalmente */
-            height: 100vh; /* Altura total de la ventana para centrar verticalmente */
-            margin: 0; /* Sin márgenes adicionales */
+            flex-direction: column; /* Coloca los elementos en una columna */
+            align-items: center; /* Centra los elementos horizontalmente */
         }
 
         .responsive-img {
             max-width: 100%; /* La imagen no superará el 100% del ancho del contenedor */
             height: auto; /* La altura se ajusta automáticamente según el ancho para mantener la proporción */
         }
+
+        .link-container {
+            text-align: center;
+            margin-top: 20px; /* Espacio entre la imagen y el enlace */
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="llibret.pdf" target="_blank">
-            <img src="portada.jpg" alt="Portada del llibret" class="responsive-img">
-        </a>
-    </div>
-    <p style="text-align: center;">
+    <a href="llibret.pdf" target="_blank">
+        <img src="portada.jpg" alt="Portada del llibret" class="responsive-img">
+    </a>
+    <div class="link-container">
         <a href="llibret.pdf" target="_blank">Haz clic aquí para ver el llibret</a>
-    </p>
+    </div>
 </body>
 </html>
