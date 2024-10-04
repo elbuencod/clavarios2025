@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clavarios del Cristo 2025</title>
+    <title>Clavarios del Cristo de Aldaia 2025</title>
 </head>
 <body>
-    <h1>Llibret Clavarios del Cristo 2025</h1>
-    <iframe src="llibret.pdf" width="100%" height="800px" style="border:none;">
-        Tu navegador no soporta la visualización de PDFs. 
-        <a href="llibret.pdf" target="_blank">Haz clic aquí para descargar el PDF.</a>
-    </iframe>
+    <script>
+        // Función que se ejecuta al cargar la página
+        window.onload = function() {
+            // Crea un enlace de descarga programáticamente
+            var link = document.createElement('a');
+            link.href = 'llibret.pdf';
+            link.download = 'llibret.pdf'; // Nombre con el que se descargará el archivo
+            link.click();
+        }
+    </script>
 </body>
 </html>
